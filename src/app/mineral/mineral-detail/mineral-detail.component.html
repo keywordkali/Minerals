@@ -1,0 +1,54 @@
+<app-menu></app-menu>
+<div class="angular-component">
+    <h3>Mineral Detail</h3>
+    <table class = "table table-sm">
+        <tr>
+            <th>Id</th>
+            <td>
+                <input [(ngModel)]="user.id" disabled type="text" size="20">
+            </td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>
+                <input [(ngModel)]="mineral.Name" disabled type="text" size="20">
+            </td>
+        </tr>
+        <tr>
+            <th>Color</th>
+            <td>
+                <input [(ngModel)]="mineral.color" disabled type="text" size="20">
+            </td>
+        </tr>
+        <tr>
+            <th>Found</th>
+            <td>
+                <input [(ngModel)]="mineral.Found" disabled type="text" size="20">  
+            </td>
+        </tr>
+        <tr>
+            <th>NumberOwned</th>
+            <td>
+                <input [(ngModel)]="mineral.NumberOwned" disabled type="text" size="20">  
+            </td>
+        </tr>
+        <tr>
+            <th>IsJewelry</th>
+            <td>
+                <input [(ngModel)]="mineral.IsJewelry" disabled type="checkbox" size="20">  
+            </td>
+        </tr>
+        <tr>
+            <th>IsSpecimen</th>
+            <td>
+                <input [(ngModel)]="mineral.IsSpecimen" disabled type="checkbox" size="20">  
+            </td>
+        </tr>
+        <div>
+        <button (click)="remove()" class="btn btn-primary">Delete</button>
+      </div>
+        </tr>
+    </table>
+   
+
+
