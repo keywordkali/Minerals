@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Mineral } from '../mineral/mineral.class';
+import { Mineral } from './mineral.class';
 
 
 @Pipe({

@@ -3,6 +3,7 @@ import { MineralService } from '../mineral.service';
 import { Mineral } from '../mineral.class';
 
 
+
 @Component({
   selector: 'app-mineral-list',
   templateUrl: './mineral-list.component.html',
@@ -11,6 +12,18 @@ import { Mineral } from '../mineral.class';
 export class MineralListComponent implements OnInit {
 tableStyle: string = "table table-sm";
 minerals: Mineral[] = [];
+searchCriteria: string = "";
+sortCriteria: string ="Name";
+ascSequence: boolean = false;
+
+sortColumn(column: string): void{
+  if(column == this.sortCriteria){
+    this.ascSequence = !this.ascSequence;
+    return;
+  }
+  this.sortCriteria = column;
+  this.ascSequence = true;
+}
   constructor(
     private mineralsvc: MineralService
   ) { }
