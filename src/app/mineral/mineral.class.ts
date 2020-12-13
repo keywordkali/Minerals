@@ -7,7 +7,5 @@ export class Mineral{
     isJewelry: boolean = false;
     isSpecimen: boolean = false;
 
-    constructor(){
-        
-    }
+    constructor(){}
 }

@@ -8,6 +8,13 @@ import { MineralListComponent } from './mineral/mineral-list/mineral-list.compon
 import { MineralCreateComponent } from './mineral/mineral-create/mineral-create.component';
 import { MineralEditComponent } from './mineral/mineral-edit/mineral-edit.component';
 import { MineralDetailComponent } from './mineral/mineral-detail/mineral-detail.component';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './menu/home/home/home.component';
+import { AboutComponent } from './menu/about/about.component';
+import { HelpComponent } from './menu/help/help.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +23,13 @@ import { MineralDetailComponent } from './mineral/mineral-detail/mineral-detail.
     MineralListComponent,
     MineralCreateComponent,
     MineralEditComponent,
-    MineralDetailComponent
+    MineralDetailComponent,
+    MenuComponent,
+    HomeComponent,
+    AboutComponent,
+    HelpComponent
+    
+   
   ],
   imports: [
     BrowserModule,
